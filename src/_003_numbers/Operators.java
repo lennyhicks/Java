@@ -42,9 +42,9 @@ public class Operators {
         int hatPrice = 30;
         bankAccount = 999999;
 
-        double reciept = (pantsPrice + phonePrice + hatPrice)*1.06;
-        System.out.println("Your total with taxes was "+ reciept);
-        bankAccount = bankAccount - reciept;
+        double receipt = (pantsPrice + phonePrice + hatPrice)*1.06;
+        System.out.println("Your total with taxes was "+ receipt);
+        bankAccount = bankAccount - receipt;
         System.out.println("You have " + bankAccount + " remaining in your account.");
 
         int payDay = 100000;
