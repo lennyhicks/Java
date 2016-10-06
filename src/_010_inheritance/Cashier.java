@@ -10,8 +10,8 @@ import static java.lang.System.out;
 public class Cashier extends Employee {
 public static int happy;
 
-    public Cashier(String n, int s, String p, int happy) {
-        super(n, s, p, happy);
+    public Cashier(String n, String pass, int s, String p, String d, int happy) {
+        super(n, pass, s, d, p, happy);
     }
 public void main(String[] args) {
 }
@@ -21,7 +21,7 @@ public static void newCashier(){
     Scanner inputInfo = new Scanner(System.in);
     out.println("How happy are you?");
     happy = inputInfo.nextInt();
-    Cashier c1 = new Cashier("Noob", 10000, "Cashier", happy);
+    Cashier c1 = new Cashier("Noob", "pass", 10000, "Cashier", "Cashier", happy);
     System.out.println(c1.displayEmployeeInfo());
 }
 }

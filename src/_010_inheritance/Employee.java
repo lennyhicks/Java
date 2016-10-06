@@ -9,29 +9,21 @@ public class Employee {
         this.salary = salary;
     }
 
-    int salary;
-    protected String name;
-    protected String department;
-    protected String posistion;
-    protected int happiness;
+    static int salary;
+    protected static String name;
+    protected static  String password;
+    protected  static String posistion;
+    protected  static String department;
+    protected  static int happiness;
 
 
-public Employee(String n, int s){
-    name = n;
-    salary = s;
-
-}
-    public Employee(String n, int s, String p, int happy) {
+    public Employee(String n, String pass, int s, String p, String d, int happy) {
         name = n;
+        password = pass;
         salary =s;
         posistion = p;
+        department = d;
         happiness = happy;
-    }
-
-    public Employee(String n, int s, String p) {
-        name = n;
-        salary =s;
-        posistion = p;
     }
 
     public String getName(){
@@ -43,7 +35,7 @@ public Employee(String n, int s){
     }
 
 
-    public String displayEmployeeInfo() {
+    public static String displayEmployeeInfo() {
         if (happiness > 5) {
             return "Name: " + name + "\n" +
                     "Salary: " + salary + "\n" +
