@@ -59,7 +59,7 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame("Calculator");
+        JFrame frame = new JFrame("Projects/toDoList/Calculator");
 
         frame.setContentPane(new Calculator().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
