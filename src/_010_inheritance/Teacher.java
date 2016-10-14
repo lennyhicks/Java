@@ -7,10 +7,9 @@ import _012_school.SchoolPeople;
  */
 public class Teacher extends SchoolPeople{
 
-    public Teacher(Boolean isAdmin, String name, String last, int age) {
-        super(isAdmin, name, last, age);
+
+
+    public Teacher(String name, String last, String pass, boolean isAdmin, int age) {
+        super(name, last, pass, isAdmin, age);
     }
-
-
-
 }
